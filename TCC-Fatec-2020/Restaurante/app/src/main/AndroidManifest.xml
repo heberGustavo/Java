@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.heber.restaurante">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.garcom.PrincipalGarconActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AdicionarDespesaActivity"
+            android:parentActivityName=".activity.FluxoDeCaixaActivity" />
+        <activity
+            android:name=".activity.AdicionarReceitaActivity"
+            android:parentActivityName=".activity.FluxoDeCaixaActivity" />
+        <activity
+            android:name=".activity.FluxoDeCaixaActivity"
+            android:parentActivityName=".activity.PrincipalActivity" />
+        <activity
+            android:name=".activity.AdicionarMesasActivity"
+            android:parentActivityName=".activity.PrincipalActivity" />
+        <activity
+            android:name=".activity.AdicionarPedidoActivity"
+            android:parentActivityName=".activity.ComandaActivity" />
+        <activity
+            android:name=".activity.CardapioFazerPedidoActivity"
+            android:parentActivityName=".activity.CardapioCategoriaFazerPedidoActivity" />
+        <activity
+            android:name=".activity.CardapioCategoriaFazerPedidoActivity"
+            android:parentActivityName=".activity.ComandaActivity" />
+        <activity
+            android:name=".activity.ComandaActivity"
+            android:parentActivityName=".activity.MesasActivity" />
+        <activity
+            android:name=".activity.CardapioCategoriaActivity"
+            android:parentActivityName=".activity.PrincipalActivity" />
+        <activity
+            android:name=".activity.AdicionarCategoriaActivity"
+            android:parentActivityName=".activity.CategoriaActivity" />
+        <activity
+            android:name=".activity.AdicionarNovoCardapioActivity"
+            android:parentActivityName=".activity.CardapioCategoriaActivity" />
+        <activity
+            android:name=".activity.CategoriaActivity"
+            android:parentActivityName=".activity.PrincipalActivity" />
+        <activity
+            android:name=".activity.CardapioActivity"
+            android:parentActivityName=".activity.CardapioCategoriaActivity" />
+        <activity
+            android:name=".activity.PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppThemeSplashLogin" />
+        <activity
+            android:name=".activity.MesasActivity"
+            android:parentActivityName=".activity.PrincipalActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppThemeSplashLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
