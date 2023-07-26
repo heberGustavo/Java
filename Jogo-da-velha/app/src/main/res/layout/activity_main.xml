@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gravidit_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:textSize="24dp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Player 1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Player 1"
+                android:id="@+id/player1_et"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Player 2"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/player2_et"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Player 2"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="28dp"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_00"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_01"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_02"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_10"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_11"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_12"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_20"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_21"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/b_22"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/colorStart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingHorizontal="18dp"
+        android:paddingBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reini"
+            android:text="Reiniciar"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:background="@drawable/style_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
